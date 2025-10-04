@@ -1,23 +1,29 @@
 <!doctype html>
-
 <html lang="tg">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Сайти ман — Саҳифаи асосӣ</title>
-  <meta name="description" content="Сомонаи намунавӣ — сафҳаи асосӣ">  <!-- Google Analytics: ҷойи ID-ро ҳамчун G-XXXXXXXX иваз кунед -->  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXX');
-  </script>
-  -->  <style>
-    /* Стили оддӣ барои намуна */
+  <title>Сомонаи Ман — Саҳифаи асосӣ</title>
+
+  <!-- SEO ТЕГҲО -->
+  <meta name="description" content="Сомонаи намунавии шахсии ман — лоиҳа, тамос ва маълумоти корӣ.">
+  <meta name="keywords" content="сайт, сомона, фриланс, веб, html, Тоҷикистон">
+  <meta name="author" content="Номи Шумо">
+
+  <!-- Open Graph (барои Google ва шабакаҳои иҷтимоӣ) -->
+  <meta property="og:title" content="Сомонаи Ман">
+  <meta property="og:description" content="Сомонаи намунавии шахсии ман.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://username.github.io/my-website/">
+  <meta property="og:image" content="https://username.github.io/my-website/me.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="me.jpg" type="image/jpeg">
+
+  <style>
     :root{ --accent:#2563eb; --muted:#6b7280 }
-    body{ font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#111 }
-    header{ background:linear-gradient(90deg,#f8fafc,#ffffff); border-bottom:1px solid #e6edf3 }
+    body{ font-family: Inter, system-ui, Arial; margin:0; color:#111; background:#f9fafc }
+    header{ background:#fff; border-bottom:1px solid #e6edf3 }
     .container{ max-width:1000px; margin:0 auto; padding:20px }
     nav{ display:flex; align-items:center; justify-content:space-between }
     .logo{ font-weight:700; color:var(--accent) }
@@ -29,10 +35,8 @@
     .features{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:28px }
     .card{ padding:18px; border:1px solid #eef4fb; border-radius:12px; background:white }
     footer{ text-align:center; padding:18px 0; color:var(--muted); border-top:1px solid #f1f5f9; margin-top:36px }
-
-    /* Навигация мобилӣ */
-    @media (max-width:640px){ .nav-links{ display:none } }
-  </style></head>
+  </style>
+</head>
 <body>
   <header>
     <div class="container">
@@ -45,53 +49,41 @@
         </div>
       </nav>
     </div>
-  </header>  <main class="container">
+  </header>
+
+  <main class="container">
     <section class="hero">
       <h1>Хуш омадед ба сайти мо</h1>
-      <p>Ин ҳам як шаблони оддии index.html барои оғоз — онро тағйир диҳед ва ба хоҳишатон бирасонед.</p>
-      <a class="btn" href="#about">Бештар омӯзед</a><div class="features" aria-hidden="false">
-    <div class="card">
-      <h3>Осон</h3>
-      <p>Коди пешрафта ва ба осонӣ таҳриршаванда.</p>
-    </div>
-    <div class="card">
-      <h3>Ҷавобгӯ</h3>
-      <p>Мисли телефон ва компютер хуб кор мекунад.</p>
-    </div>
-    <div class="card">
-      <h3>Тоза</h3>
-      <p>Сомонаи содда ва пуриқтидор барои оғоз.</p>
-    </div>
-  </div>
-</section>
+      <p>Ин сомонаи намунавӣ аст, ки барои омӯхтани HTML ва веб истифода мешавад.</p>
+      <a class="btn" href="#about">Бештар омӯзед</a>
+      <div class="features">
+        <div class="card"><h3>Осон</h3><p>Коди тоза ва фаҳмо.</p></div>
+        <div class="card"><h3>Ҷавобгӯ</h3><p>Дар телефон ва компютер хуб кор мекунад.</p></div>
+        <div class="card"><h3>Тоза</h3><p>Дизайни содда ва зебо барои оғоз.</p></div>
+      </div>
+    </section>
 
-<section id="about">
-  <h2>Дар бораи мо</h2>
-  <p>Ин ҷо матни мухтасар барои тавсифи лоиҳа ё ширкати шумо меояд. Шумо метавонед инро бо маълумоти худ иваз кунед.</p>
-</section>
+    <section id="about">
+      <h2>Дар бораи мо</h2>
+      <p>Ин ҷо шумо метавонед маълумоти шахсӣ ё касбии худро нависед.</p>
+    </section>
 
-<section id="contact" style="margin-top:24px">
-  <h2>Тамос</h2>
-  <p>Суроға ё почтаи электрониро дар инҷо нависед:</p>
-  <form onsubmit="alert('Форма барои намуна мебошад — бо сервер пайваст нест'); return false;">
-    <label style="display:block; margin-bottom:8px">
-      Ном
-      <input type="text" name="name" style="display:block; width:100%; padding:8px; margin-top:6px; border-radius:6px; border:1px solid #dfe6ee">
-    </label>
-    <label style="display:block; margin-bottom:8px">
-      Email
-      <input type="email" name="email" style="display:block; width:100%; padding:8px; margin-top:6px; border-radius:6px; border:1px solid #dfe6ee">
-    </label>
-    <button class="btn" type="submit">Пошти ирсол кунед</button>
-  </form>
-</section>
+    <section id="contact" style="margin-top:24px">
+      <h2>Тамос</h2>
+      <form onsubmit="alert('Ин танҳо намуна аст'); return false;">
+        <label>Ном<input type="text" style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #ccc"></label>
+        <label>Email<input type="email" style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #ccc"></label>
+        <button class="btn" type="submit">Пешниҳод фиристодан</button>
+      </form>
+    </section>
+  </main>
 
-  </main>  <footer>
-    <div class="container">© {new Date().getFullYear()} Сомонаи Ман — Ҳама ҳуқуқҳо ҳифз шудаанд</div>
-  </footer>  <script>
-    // Танзими сол дар футер (бо JavaScript оддӣ)
-    try{
-      document.querySelector('footer .container').innerHTML = '© ' + new Date().getFullYear() + ' Сомонаи Ман — Ҳама ҳуқуқҳо ҳифз шудаанд';
-    }catch(e){/* камбудиҳоро нодида мегирем */}
-  </script></body>
+  <footer>
+    <div class="container">© <span id="year"></span> Сомонаи Ман — Ҳама ҳуқуқҳо ҳифз шудаанд</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
